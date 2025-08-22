@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Inventory Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📦 My Inventory</h1>
+    
+    <!-- Add Item Form -->
+    <form id="itemForm">
+      <input type="text" id="itemName" placeholder="Item Name" required>
+      <input type="number" id="itemQty" placeholder="Quantity" required>
+      <input type="number" id="itemPrice" placeholder="Price" required>
+      <button type="submit">Add Item</button>
+    </form>
+
+    <!-- Inventory Table -->
+    <table id="inventoryTable">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Total</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Items will appear here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
